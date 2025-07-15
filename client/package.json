@@ -11,9 +11,11 @@
     "@testing-library/user-event": "^13.5.0",
     "crypto-js": "^4.1.1",
     "html5-qrcode": "^2.3.7",
+    "lottie-react": "^2.4.1",
     "qrcode": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
     "react-qr-code": "^2.0.11",
     "react-qr-scanner": "^1.0.0-alpha.11",
     "react-router-dom": "^6.9.0",
@@ -47,6 +49,6 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "sass": "^1.72.0"
   }
 }

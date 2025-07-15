@@ -1,121 +1,152 @@
-
-.mainsignup{
-    background-image: url('https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-     min-height: 100vh;
-    padding-left: 30%;
-    padding-right:30%;
-    padding-top: 8%;
-    display: flex;
+.mainsignup {
+  background-image: url("https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 }
+
 .form {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 5rem;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+  justify-content: center;
+}
+
+.form:hover {
+  border: 1px solid black;
+}
+
+#heading {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  border-radius: 25px;
+  padding: 1em 1em;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+  font-size: 1rem;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+.button3 {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button3:hover {
+  background-color: #0047ab;
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  --mdb-nav-pills-link-active-bg: white;
+  --mdb-nav-pills-link-active-color: black;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #ffffff !important;
+  color: black !important;
+}
+
+.nav-pills .nav-link {
+  color: white;
+  transition: 0.3s ease;
+}
+
+a#tab-login.nav-link,
+a#tab-register.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔁 RESPONSIVE LAYOUT */
+@media only screen and (max-width: 768px) {
+  .mainsignup {
+    padding: 1rem;
     flex-direction: column;
-    padding-left: 7em;
-    padding-right: 7em;
-    padding-bottom: 0.4em;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    transition: .4s ease-in-out;
-    width: 600px;
-    height: 60vh;
-    justify-content: center;
-    padding-bottom: 40px;
-  }
-  .form:hover {
-    transform: scale(1.05);
-    border: 1px solid black;
-  }
-  
-  #heading {
-    text-align: center;
-    margin-top: 1em;
-    color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  .field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
-    border-radius: 25px;
-    padding: 0.6em;
-    border: none;
-    outline: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    
-    border-bottom:#d3d3d3;
-  }
-  
-  .input-icon {
-    height: 1.3em;
-    width: 1.3em; 
-    fill: white;
-    background-color: #171717;
   }
 
-  .input-icon path{
-    height: 1.3em;
-    width: 1.3em;
-  }  
-  .input-field {
-    background: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    color: #d3d3d3;
-    font-size: medium;
+  #heading {
+    font-size: 2.5rem;
   }
 
   .button3 {
-    margin-top: 20px;
-    padding: 0.5em;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    transition: .4s ease-in-out;
-    background-color: #ffffff;
-    color: black;
-    font-size: 1.5rem;
-  }
-  .nav-pills .nav-link.active{
-    --mdb-nav-pills-link-active-bg: white;
-    --mdb-nav-pills-link-active-color: black;
-  }
-  .nav-pills .nav-link {
-    --mdb-nav-pills-link-hover-bg: rgba(0,0,0,0.3);
-    --mdb-nav-pills-link-color: white;
-  }
-  .button3:hover {
-    background-color: #0047ab;
-    color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
-  @media only screen and (max-width: 550px) {
-    .mainsignup{
-      object-position: center;
-        padding-left: 3%;
-        padding-top: 35%;
-        padding-bottom: 40%;
-        padding-right: 3%;
+  .input-field {
+    font-size: 0.95rem;
   }
-    .form{
-      margin: 0%;
-      width: fit-content;
-    }
-    .form:hover {
-      transform: scale(1);
-    }
-    .input-field{
-      font-size: 15px;
-    }
+}
+
+@media only screen and (max-width: 480px) {
+  #heading {
+    font-size: 2rem;
   }
-  a#tab-login.nav-link,
-  a#tab-register.nav-link{
-    font-size: medium;
-    font-weight: 400;
-  }  
+
+  .form {
+    padding: 3rem;
+    height: auto;
+  }
+
+  .field {
+    flex-direction: row;
+  }
+
+  .button3 {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 0.9rem;
+  }
+}
